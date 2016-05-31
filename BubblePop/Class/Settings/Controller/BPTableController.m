@@ -59,7 +59,7 @@ static NSString * Identifier = @"Cell1";
     }else{
         cell.categoryLabel.text = @"其他功能";
     }
-      cell.titleImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"washing_0%lu",indexPath.row+1]];
+      cell.titleImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"washing_0%ld",indexPath.row+1]];
     // Configure the cell...
 
    // cell.backgroundImageView.image = [UIImage imageNamed:@"backgroundImage"];

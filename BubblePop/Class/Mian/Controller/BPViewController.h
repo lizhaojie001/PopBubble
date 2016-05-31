@@ -11,5 +11,6 @@
 @interface BPViewController : UIViewController
 @property (nonatomic,strong,readonly) NSString * name ;
 @property (nonatomic,assign) NSUInteger second;
-
+@property (nonatomic,assign) NSUInteger numberOfBubble;
+@property (nonatomic,assign) NSUInteger numberOfB;
 @end

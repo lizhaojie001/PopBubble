@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -28,16 +29,6 @@
                                     <constraint firstAttribute="width" secondItem="IEI-AH-oUn" secondAttribute="height" multiplier="1:1" id="H7u-N5-9E9"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQd-nL-Pmp">
-                                <rect key="frame" x="255" y="10" width="45" height="23"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="FeO-VG-xIN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHx-f0-r67">
                                 <rect key="frame" x="43" y="10" width="212" height="23"/>
                                 <animations/>
@@ -52,13 +43,35 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzA-hG-FB2">
+                                <rect key="frame" x="301" y="10" width="9" height="23"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQd-nL-Pmp">
+                                <rect key="frame" x="255" y="10" width="45" height="23"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="FeO-VG-xIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vzA-hG-FB2" firstAttribute="leading" secondItem="LQd-nL-Pmp" secondAttribute="trailing" constant="8" symbolic="YES" id="4IB-dG-xca"/>
                             <constraint firstItem="tHx-f0-r67" firstAttribute="top" secondItem="LfR-3S-Tmf" secondAttribute="top" constant="10" id="4py-qe-SBs"/>
                             <constraint firstItem="LQd-nL-Pmp" firstAttribute="top" secondItem="LfR-3S-Tmf" secondAttribute="top" constant="10" id="5uf-Ab-QUj"/>
+                            <constraint firstAttribute="bottom" secondItem="vzA-hG-FB2" secondAttribute="bottom" constant="10" id="7hr-y7-VzR"/>
+                            <constraint firstItem="vzA-hG-FB2" firstAttribute="leading" secondItem="LQd-nL-Pmp" secondAttribute="trailing" constant="1" id="9GL-9e-UVN"/>
                             <constraint firstAttribute="trailing" secondItem="DPR-6O-WR9" secondAttribute="trailing" id="Aii-Ut-mOR"/>
+                            <constraint firstAttribute="trailing" secondItem="vzA-hG-FB2" secondAttribute="trailing" constant="10" id="Ajn-1S-YSp"/>
+                            <constraint firstItem="vzA-hG-FB2" firstAttribute="top" secondItem="LfR-3S-Tmf" secondAttribute="top" constant="11" id="DKb-HX-6iM"/>
                             <constraint firstAttribute="bottom" secondItem="IEI-AH-oUn" secondAttribute="bottom" constant="5" id="ESm-44-1ne"/>
                             <constraint firstItem="DPR-6O-WR9" firstAttribute="top" secondItem="LfR-3S-Tmf" secondAttribute="top" id="K05-Db-U9o"/>
                             <constraint firstItem="tHx-f0-r67" firstAttribute="leading" secondItem="IEI-AH-oUn" secondAttribute="trailing" constant="5" id="Qwv-dP-Mmz"/>
@@ -70,8 +83,19 @@
                             <constraint firstItem="LQd-nL-Pmp" firstAttribute="leading" secondItem="tHx-f0-r67" secondAttribute="trailing" id="j01-hc-3me"/>
                             <constraint firstAttribute="bottom" secondItem="LQd-nL-Pmp" secondAttribute="bottom" constant="10" id="khs-VN-NJi"/>
                             <constraint firstAttribute="bottom" secondItem="tHx-f0-r67" secondAttribute="bottom" constant="10" id="mMx-P2-Vvd"/>
+                            <constraint firstAttribute="bottom" secondItem="vzA-hG-FB2" secondAttribute="bottom" constant="11" id="nUd-wO-IP0"/>
+                            <constraint firstItem="vzA-hG-FB2" firstAttribute="top" secondItem="LfR-3S-Tmf" secondAttribute="top" constant="10" id="pr3-Ks-9ZT"/>
                             <constraint firstAttribute="trailing" secondItem="LQd-nL-Pmp" secondAttribute="trailing" constant="20" id="vkj-Ts-kw4"/>
+                            <constraint firstAttribute="trailing" secondItem="vzA-hG-FB2" secondAttribute="trailing" constant="10" id="zma-uz-2fG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4IB-dG-xca"/>
+                                <exclude reference="9GL-9e-UVN"/>
+                                <exclude reference="DKb-HX-6iM"/>
+                                <exclude reference="nUd-wO-IP0"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <animations/>
@@ -88,6 +112,7 @@
                 <outlet property="categoryLabel" destination="tHx-f0-r67" id="FxQ-0U-lL9"/>
                 <outlet property="showResult" destination="LQd-nL-Pmp" id="K5a-f3-a1E"/>
                 <outlet property="titleImageView" destination="IEI-AH-oUn" id="9XF-az-ORj"/>
+                <outlet property="unitLabel" destination="vzA-hG-FB2" id="z0M-fa-jQB"/>
             </connections>
             <point key="canvasLocation" x="523" y="252"/>
         </tableViewCell>

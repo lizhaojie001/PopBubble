@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BPIntroduce">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Snw-ua-hkQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <string key="text">FUNCTIONAL DESCRIPTIONS
+The game is called BubblePop(you can call your app with a different name ifyou wish to). In this game, a number of bubbles are randomly displayed on an iOS device screen. A player pops a bubble by touching the bubble and every time s/he pops a bubble s/he earns a certain game points. Bubbles are made offive colours: red, pink, green, blue and black. Each colour corresponds to specific game points and has a specific probability of appearance(see table1). All bubbles appear on the screen briefly(see core functionality9). A player needs to pop as many bubbles as possible within a certain timeframe(default to60 seconds) to get high scores. Note that, if a player pops two or more bubbles of the same colour consecutively, s/he earns1.5 times ofthe game points for the additional bubbles s/he pops. Finally, game scores are saved and a high score board is displayed after a game run is finished. Figure1 provides a rough mock up of what the main interface may look like. NOTE: Figure1 gives you a guide for your GUI, you shall design a more sophisticated and more polished GUI for your own work. You must implement the core functionalities(listed below) to get a passable mark for coding/testing. Implementation of optional functionalities will increase your marks.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Snw-ua-hkQ" secondAttribute="trailing" id="YMR-Jd-yqd"/>
+                <constraint firstItem="Snw-ua-hkQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="la4-8s-zme"/>
+                <constraint firstItem="Snw-ua-hkQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ohj-0b-jKo"/>
+                <constraint firstAttribute="bottom" secondItem="Snw-ua-hkQ" secondAttribute="bottom" id="tCl-mm-aMb"/>
+            </constraints>
+            <point key="canvasLocation" x="624" y="311"/>
+        </view>
+    </objects>
+</document>

@@ -3,7 +3,7 @@
 //  BubblePop
 //
 //  Created by ios on 16/4/19.
-//  Copyright © 2016年 Ios. All rights reserved.
+//  Copyright © 2016year Ios. All rights reserved.
 //
 
 #import "BPNaviController.h"
@@ -13,20 +13,23 @@
 @end
 
 @implementation BPNaviController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    //设置全局item的字体颜色
-    UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedIn:[self class], nil];
++(void)initialize{
+    //setItemColorOfAll
+    UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    dic[NSForegroundColorAttributeName] = [UIColor colorWithRed:99/255.0 green:42/255.0 blue:64/255.0 alpha:0.4];
+    dic[NSForegroundColorAttributeName] = [UIColor colorWithRed:249/255.0 green:62/255.0 blue:112/255.0 alpha:0.7];
+    dic[NSFontAttributeName] = [UIFont systemFontOfSize:20];
     [item setTitleTextAttributes:dic forState:UIControlStateNormal];
 
-    NSLog(@"%@",self.navigationBar.subviews);
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    MYLog(@"%@",self.navigationBar.subviews);
     // Do any additional setup after loading the view.
 }
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"---------------------\n%@",self.navigationBar.subviews);
+    MYLog(@"---------------------\n%@",self.navigationBar.subviews);
     BPNavigationBar *  navigationBar = [[BPNavigationBar alloc]initWithFrame:self.navigationBar.bounds];
 
     [self setValue:navigationBar forKey:@"navigationBar"];
@@ -39,14 +42,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
