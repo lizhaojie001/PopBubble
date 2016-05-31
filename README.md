@@ -1,8 +1,9 @@
 # PopBubble
 
 #一个定时积分游戏 --点击泡泡
-效果图
-![](http://7xux50.com1.z0.glb.clouddn.com/pop.gif)
+
+![效果图](http://7xux50.com1.z0.glb.clouddn.com/pop.gif)
+
 **其中用到了计时器**
 ```objc
 - (void) setTimer{
