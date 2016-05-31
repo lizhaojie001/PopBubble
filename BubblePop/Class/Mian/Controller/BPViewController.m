@@ -187,7 +187,6 @@ self.scoreLabel.text= [NSString stringWithFormat:@"score:%.1f",self.score];
             dispatch_source_set_event_handler(_timer, ^{
                 if(timeout<=0){ //timeover
 
-
                     [self cancelTimer];
 dispatch_sync(dispatch_get_main_queue(), ^{
 self.lastScore = self.scoreLabel.text;
@@ -198,11 +197,7 @@ self.lastScore = self.scoreLabel.text;
  
     [self deleteBubble];
     [[BPTools tools] restart];
-
-
-
-
-                }else{
+      }else{
 
                     int second = timeout;
                     dispatch_async(dispatch_get_main_queue(), ^{
